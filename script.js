@@ -216,3 +216,36 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+
+
+
+
+
+
+const text = "  Mohamed Elfiky"
+const el = document.getElementById("text")
+
+let index = 0
+let isDeleting = false
+
+function typeEffect() {
+    if (!isDeleting) {
+        el.textContent = text.slice(0, index++)
+        if (index > text.length) {
+            isDeleting = true
+            setTimeout(typeEffect, 2200)
+            return
+        }
+    } else {
+        el.textContent = text.slice(0, index--)
+        if (index === 0) {
+            isDeleting = false
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100)
+}
+
+typeEffect()
