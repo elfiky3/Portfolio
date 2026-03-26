@@ -12,7 +12,31 @@
     align-items: center;
     justify-content: space-between;
 }
+.nav {
+    /* background:linear-gradient(130deg, rgb(255, 174, 0), red); */
+    z-index: 999;
+    background: linear-gradient(
+        -45deg,
+        #ee7752,
+        red,
+        #ee7752,
+        red
+    );
+    background-size: 400% 400%;
+    animation: gradientFlow 6s ease infinite;
+}
 
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .icon8 {
     width: 40px;
     height: 40px;
@@ -40,7 +64,7 @@
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.7);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
     }
 
     70% {
@@ -127,10 +151,7 @@ a:hover {
     opacity: 0.6;
 }
 
-.nav {
-    background: #1b817a50;
-    z-index: 999;
-}
+
 
 .home-banner {
     border-bottom: 5px solid #ffffff;
