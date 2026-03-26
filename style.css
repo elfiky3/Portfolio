@@ -17,10 +17,10 @@
     z-index: 999;
     background: linear-gradient(
         -45deg,
-        #ee7752,
-        red,
-        #ee7752,
-        red
+        #526fee,
+        rgb(9, 70, 225),
+        #1b4fa2,
+        rgb(158, 161, 202)
     );
     background-size: 400% 400%;
     animation: gradientFlow 6s ease infinite;
