@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     cursor: none;
-    color: #000;
+    
 }
 
 .nn {
@@ -158,7 +158,7 @@ a:hover {
 }
 
 .home-banner .left {
-    color: #fff;
+    color: #000000;
 }
 
 .home-banner .left h4 {
@@ -227,7 +227,7 @@ a:hover {
 
 .about-me {
     /* background: #00102c; */
-    color: #ffffff;
+    color: #000000;
     border-bottom: 5px solid #ffffff;
 }
 
