@@ -1114,3 +1114,18 @@ h2 .cursor {
 .p2 #text {
     font-size: 30px;
 }
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.col-md-6, .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    
+    min-width: 300px;
+    margin: 0 auto;
+}
